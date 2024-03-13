@@ -17,6 +17,24 @@ public class Car {
         this.fuel = 100.0;
     }
 
+    //Metódusok
+    //Gyorsítás metódus
+    public int accelerate(int amount){
+        this.speed += amount;
+        return this.speed;
+    }
+
+    // Üzemanyag fogyasztás metódus
+    public double consumeFuel(double amount){
+        this.fuel -= amount;
+        return this.fuel;
+    }
+
+    public double refillGasoline(double amount){
+        this.fuel += amount;
+        return this.fuel;
+    }
+
     // Getter metódus az adattagok elérése
     public String getBrand() {
         return brand;
